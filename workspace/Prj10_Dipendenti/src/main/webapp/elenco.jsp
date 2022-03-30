@@ -20,7 +20,7 @@
 <% for (Dipendente d : dipendenti){ %>
   <tr>
     <td><%= d.getnMatr() %></td>
-    <td><%= d %></td>
+    <td><%= d.getNome() %></td>
   </tr>
 <% } %>  
   

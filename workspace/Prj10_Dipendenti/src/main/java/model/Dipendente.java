@@ -17,6 +17,10 @@ public abstract class Dipendente {
 		return nMatr;
 	}
 	
+	public String getNome() {
+		return nome;
+	}
+	
 	public abstract double calcolaStipendio();
 
 	@Override
