@@ -12,6 +12,4 @@ public interface LibroInterface {
 	
 	Dipendente getDipendentebyId(int id);
 	List<Dipendente> getAll();
-	
-	
 }

@@ -32,18 +32,20 @@ public class LibroMatricola implements LibroInterface {
 				d = new Fattorino(nome);
 				break;
 		}	
+		dipendenti.add(d);
 	}
 
 	@Override
 	public Dipendente getDipendentebyId(int id) {
-		Dipendente d = null;
 		
+		//scorro l'elenco dei dipendenti
 		for (Dipendente dipendente : dipendenti) {
+			//se la matricola del dip corrente corrisponde a  quella in argomento, ritorno il dip
 			if (dipendente.getnMatr() == id)
 				return dipendente;
 		}
-		
-		return d;
+		//altrimenti ritorno null
+		return null;
 	}
 
 	@Override
