@@ -62,4 +62,4 @@ insert into scienziati (nome) values('Rachel Carson');
 insert into scienziati (nome) values('Antoine Lavoisier');
 insert into scienziati (nome) values('James Clerk Maxwell');
 insert into scienziati (nome) values('Heinrich Rudolf Hertz');
-insert into scienziati (nome) values('William Thomso');n
+insert into scienziati (nome) values('William Thomson');
