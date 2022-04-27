@@ -8,7 +8,13 @@ public class ProvaThread {
 		
 		mt1.start();
 		
-		System.out.println("Sono la classe ProvaThread");
+		try {
+			Thread.sleep(2500);
+			System.out.println("Sono il main thread");
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 		Runnable r1 = () -> {
 				try {
