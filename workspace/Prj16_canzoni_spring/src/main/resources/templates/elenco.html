@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title th:text="${titolo}">Insert title here</title>
+</head>
+<body>
+
+	<h1 th:text="${titolo}">Titolo generico</h1>
+	
+	<table>
+	
+		<tr th:each="canzone : ${listaCanzoni}">
+			<td th:text="${canzone.titolo}"></td>
+		</tr>
+	
+	</table>
+	
+
+</body>
+</html>

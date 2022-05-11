@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+	const URL = "api/canzoni";
+	
+    const TABELLA = document.createElement('table')
+
+    fetch(URL)
+        .then(j => j.json())
+        .then(canzoni => {
+        for (const canzone of canzoni) {
+                const TR = document.createElement('tr')
+                const TD = document.createElement('td')
+                TD.textContent = canzone.titolo
+                console.log(canzone.titolo);
+                TR.appendChild(TD)
+                TABELLA.appendChild(TR)
+            }
+            document.body.appendChild(TABELLA)
+    })
+
+</script>
+
+
+</body>
+</html>
