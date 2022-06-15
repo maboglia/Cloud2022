@@ -17,6 +17,9 @@ public class StreamRegioni {
 		Integer reduce = list.stream().reduce(0, (x, y) -> x+y);
 		
 		System.out.println(reduce);
+		
+		List<List<String>> list2 = regioni.stream().map(r -> r.comuni).toList();
+		list2.stream().map(ls -> ls.get(0)).toList();
 	
 	}
 
